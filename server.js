@@ -12,17 +12,27 @@ const PORT = 3001;
 // app.get('/test', handleGetTest);
 app.get('/weather', handleGetWeather);
 
+class Forecast {
+  constructor(dataObj) {
+    this.date = dataObj.valid_date;
+    this.description = dataObj.weather.description;
+  }
+};
+
 function handleGetWeather(req, res) {
 
   let lat = req.query.lat;
   let lon = req.query.lon;
   let searchQuery = req.query.searchQuery;
-  console.log('here is some data: ', weatherData.find((elem) => {
-    return elem.city_name.toLowerCase === searchQuery.toLowerCase;
-  }));
+  let cityWeatherData = weatherData.find((elem) => {
+    return elem.city_name === searchQuery;
+  });
+  console.log(cityWeatherData);
+  res.send(
+    cityWeatherData ?
+      `the timezone for ${cityWeatherData.city_name} is ${cityWeatherData.timezone}` :
+      `ERROR: Please try searching for "Seattle", "Paris", or "Amman" instead.`);
   // console.log(`lat: ${lat}, lon: ${lon}, searchQuery: ${searchQuery}`);
-
-  res.send('Your test request worked!');
 }
 
 
