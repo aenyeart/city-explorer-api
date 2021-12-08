@@ -21,9 +21,10 @@ To run this app on your local machine, you will need to obtain your own API keys
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 12-07-2021 6:40pm - Server files initialized
 12-07-2021 6:52pm - Basic Expres server tested
+12-07-2021 9:00pm - /weather endpoint implemented and tested
 
 ## Credit and Collaborations
-
+- Daniel 
 - Data flowchart created in collaboration with [Jacob Choi](https://github.com/Choij12)
 
 **Name of feature: Set up server repo**
