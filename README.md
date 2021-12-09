@@ -26,7 +26,7 @@ To run this app on your local machine, you will need to obtain your own API keys
 12-07-2021 11:44pm - Creates Forecast class
 12-08-2021 5:24pm - Server responds to weather query with assembled array of Forecast instances
 12-08-2021 6:20pm - Server sends error messages to client
-12-08-2021 :pm - 
+12-09-2021 8:50 am - Adds weatherbit API key to .env
 12-08-2021 :pm - 
 
 
