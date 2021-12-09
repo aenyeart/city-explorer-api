@@ -20,12 +20,12 @@ To run this app on your local machine, you will need to obtain your own API keys
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 12-07-2021 6:40pm - Server files initialized
-12-07-2021 6:52pm - Basic Expres server tested
+12-07-2021 6:52pm - Basic Express server tested
 12-07-2021 9:00pm - /weather endpoint implemented and tested
 12-07-2021 10:23pm - Gets specific element from data using .find
 12-07-2021 11:44pm - Creates Forecast class
 12-08-2021 5:24pm - Server responds to weather query with assembled array of Forecast instances
-12-08-2021 :pm - 
+12-08-2021 6:20pm - Server sends error messages to client
 12-08-2021 :pm - 
 12-08-2021 :pm - 
 
@@ -50,7 +50,7 @@ Estimate of time needed to complete: 2h
 
 Start time: 6:40p-1:00a, 4:00p-5:20p
 
-Finish time: 
+Finish time: 5:20p
 
 Actual time needed to complete: 8h
 
