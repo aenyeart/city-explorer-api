@@ -3,6 +3,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const axios = require('axios');
 const app = express();
 app.use(cors());
 const PORT = 3001;
@@ -26,7 +27,10 @@ async function handleGetWeather(req, res) {
   let lon = req.query.lon;
   let location = req.query.location;
 
-  let url =
+  let url = 'http://api.weatherbit.io/v2.0'
+
+  let weatherData = await axios.get(`/forecast/daily?key=${process.env.WEATHERBIT_API_KEY}&units=I&lat=${lat}&lon=${lon}`);
+
 
 
   let cityWeatherData = weatherData.find((elem) => {
