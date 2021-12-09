@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 const PORT = 3001;
 
-const weatherData = require('./data/weather.json');
+// const weatherData = require('./data/weather.json');
 
 app.get('/test', (req, res) => res.status(200).send('Server test successful.'));
 app.get('/weather', handleGetWeather);
@@ -20,13 +20,17 @@ class Forecast {
   }
 }
 
-function handleGetWeather(req, res) {
+async function handleGetWeather(req, res) {
   let forecastArray = [];
-  // let lat = req.query.lat;
-  // let lon = req.query.lon;
-  let locQuery = req.query.locQuery;
+  let lat = req.query.lat;
+  let lon = req.query.lon;
+  let location = req.query.location;
+
+  let url =
+
+
   let cityWeatherData = weatherData.find((elem) => {
-    return elem.city_name.toLowerCase() === locQuery.toLowerCase(); // this WORKS
+    return elem.city_name.toLowerCase() === location.toLowerCase(); // this WORKS
   });
 
   if (cityWeatherData) {
