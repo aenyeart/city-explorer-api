@@ -22,6 +22,8 @@ To run this app on your local machine, you will need to obtain your own API keys
 12-07-2021 6:40pm - Server files initialized
 12-07-2021 6:52pm - Basic Expres server tested
 12-07-2021 9:00pm - /weather endpoint implemented and tested
+12-07-2021 10:23pm - Gets specific element from data using .find
+12-07-2021 11:44pm - Creates Forecast class
 
 ## Credit and Collaborations
 - Daniel 
@@ -41,7 +43,7 @@ Actual time needed to complete: 1h10m
 
 Estimate of time needed to complete: 2h
 
-Start time: 6:40p
+Start time: 6:40p-1:00a
 
 Finish time: 
 
