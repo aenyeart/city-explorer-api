@@ -19,18 +19,77 @@ To run this app on your local machine, you will need to obtain your own API keys
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-12-07-2021 6:--pm - Server files initialized
+12-07-2021 6:40pm - Server files initialized
+12-07-2021 6:52pm - Basic Expres server tested
+12-07-2021 9:00pm - /weather endpoint implemented and tested
+12-07-2021 10:23pm - Gets specific element from data using .find
+12-07-2021 11:44pm - Creates Forecast class
+12-08-2021 5:24pm - Server responds to weather query with assembled array of Forecast instances
+12-08-2021 :pm - 
+12-08-2021 :pm - 
+12-08-2021 :pm - 
+
 
 ## Credit and Collaborations
-
+- Daniel 
 - Data flowchart created in collaboration with [Jacob Choi](https://github.com/Choij12)
 
-Name of feature: Set up server repo
+**Name of feature: Set up server repo**
 
 Estimate of time needed to complete: 1h
 
 Start time: 5:30p
 
+Finish time: 6:40p
+
+Actual time needed to complete: 1h10m
+
+**Name of feature: Weather placeholder data**
+
+Estimate of time needed to complete: 2h
+
+Start time: 6:40p-1:00a, 4:00p-5:20p
+
 Finish time: 
 
-Actual time needed to complete:
+Actual time needed to complete: 8h
+
+**Name of feature: Errors**
+
+Estimate of time needed to complete: 30m 
+
+Start time: 5:45p
+
+Finish time: 
+
+Actual time needed to complete: 
+
+**Name of feature: **
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+
+**Name of feature: **
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+
+**Name of feature: **
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
