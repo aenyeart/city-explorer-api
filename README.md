@@ -60,9 +60,9 @@ Estimate of time needed to complete: 30m
 
 Start time: 5:45p
 
-Finish time: 
+Finish time: 10:30p
 
-Actual time needed to complete: 
+Actual time needed to complete: 5h
 
 **Name of feature: **
 
