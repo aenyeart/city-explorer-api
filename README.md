@@ -24,6 +24,11 @@ To run this app on your local machine, you will need to obtain your own API keys
 12-07-2021 9:00pm - /weather endpoint implemented and tested
 12-07-2021 10:23pm - Gets specific element from data using .find
 12-07-2021 11:44pm - Creates Forecast class
+12-08-2021 5:24pm - Server responds to weather query with assembled array of Forecast instances
+12-08-2021 :pm - 
+12-08-2021 :pm - 
+12-08-2021 :pm - 
+
 
 ## Credit and Collaborations
 - Daniel 
@@ -43,17 +48,17 @@ Actual time needed to complete: 1h10m
 
 Estimate of time needed to complete: 2h
 
-Start time: 6:40p-1:00a
+Start time: 6:40p-1:00a, 4:00p-5:20p
 
 Finish time: 
 
-Actual time needed to complete: 
+Actual time needed to complete: 8h
 
 **Name of feature: Errors**
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 30m 
 
-Start time: 
+Start time: 5:45p
 
 Finish time: 
 
