@@ -86,11 +86,11 @@ Finish time:
 
 Actual time needed to complete: 
 
-**Name of feature: **
+**Name of feature: Modularization**
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 30m 
 
-Start time: 
+Start time: 8:15a
 
 Finish time: 
 
