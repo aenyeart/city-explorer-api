@@ -22,6 +22,7 @@ class Forecast {
 class Movie {
   constructor(movie) {
     this.title = movie.title;
+    this.overview = movie.overview;
     this.vote_average = movie.vote_average;
     this.vote_count = movie.vote_count;
     this.image_url = movie.poster_path;
@@ -61,24 +62,5 @@ async function handleGetMovies(req, res) {
     // res.send(movieData.data.results);
   }
 }
-
-/*
-movieData.data.results[]
-{
-  data: {
-    page: 1,
-    results: [
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object], [Object],
-      [Object], [Object]
-    ],
-    total_pages: 4,
-    total_results: 71
-  }
-}*/
 
 app.listen(PORT, () => console.log('server is listening at port', PORT));
