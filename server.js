@@ -8,8 +8,6 @@ const app = express();
 app.use(cors());
 const PORT = 3001;
 
-let weatherData; //= require('./data/weather.json');
-
 app.get('/test', (req, res) => res.status(200).send('Server test successful.'));
 app.get('/weather', handleGetWeather);
 app.get('/movies', handleGetMovies);
@@ -22,13 +20,13 @@ class Forecast {
   }
 }
 // class Movie {
-//   constructor(movieData) {
-//     this.title = movieData.data;
-//     this.average_votes = movieData.data;
-//     this.total_votes = movieData.data;
-//     this.image_url = movieData.data;
-//     this.popularity = movieData.data;
-//     this.released_on = movieData.data;
+//   constructor(movie) {
+//     this.title = movie.data;
+//     this.average_votes = movie.data;
+//     this.total_votes = movie.data;
+//     this.image_url = movie.data;
+//     this.popularity = movie.data;
+//     this.released_on = movie.data;
 //   }
 // }
 
@@ -47,5 +45,16 @@ async function handleGetWeather(req, res) {
     res.status(500).send(`There was an error in fetching weather data`);
   }
 }
+async function handleGetMovies(req, res) {
+  let city = req.query.location;
+  let url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&query=${city}&include_adult=false`;
 
+  try {
+    let movieData = await axios.get(url);
+    console.log(movieData.data);
+    let moviesArray = movieData.data.map(); // TODO
+  } catch (e) {
+    // TODO
+  }
+}
 app.listen(PORT, () => console.log('server is listening at port', PORT));
