@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 const PORT = 3001;
 
-// const weatherData = require('./data/weather.json');
+let weatherData; //= require('./data/weather.json');
 
 app.get('/test', (req, res) => res.status(200).send('Server test successful.'));
 app.get('/weather', handleGetWeather);
@@ -22,27 +22,18 @@ class Forecast {
 }
 
 async function handleGetWeather(req, res) {
-  let forecastArray = [];
   let lat = req.query.lat;
   let lon = req.query.lon;
-  let location = req.query.location;
-
-  let url = 'http://api.weatherbit.io/v2.0'
-
-  let weatherData = await axios.get(`/forecast/daily?key=${process.env.WEATHERBIT_API_KEY}&units=I&lat=${lat}&lon=${lon}`);
-
-
-
-  let cityWeatherData = weatherData.find((elem) => {
-    return elem.city_name.toLowerCase() === location.toLowerCase(); // this WORKS
-  });
-
-  if (cityWeatherData) {
-    forecastArray = cityWeatherData.data.map((dailyWeather) => new Forecast(dailyWeather)); // .data might bottleneck what gets passed on too much. Might need to pass remainder of object to constructor if we need more data later.
+  let url = `http://api.weatherbit.io/v2.0/forecast/daily?key=${process.env.WEATHERBIT_API_KEY}&units=I&lat=${lat}&lon=${lon}`; // gets ~10 days of weather
+  console.log(url);
+  try {
+    let weatherData = await axios.get(url);
+    console.log(weatherData.data.data);
+    let forecastArray = weatherData.data.data.map((dailyWeather) => new Forecast(dailyWeather));
     console.log(forecastArray);
     res.status(200).send(forecastArray);
-  } else {
-    res.status(500).send(`500 ERROR: Please try searching for "Seattle", "Paris", or "Amman" instead.`);
+  } catch (e) {
+    res.status(500).send(`There was an error in fetching weather data`);
   }
 }
 
