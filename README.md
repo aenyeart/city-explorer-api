@@ -66,7 +66,7 @@ Actual time needed to complete: 5h
 
 **Name of feature: Live Weather**
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: ?
 
 Start time: 2:45p
 
@@ -74,11 +74,11 @@ Finish time: 4:30p
 
 Actual time needed to complete: 2h
 
-**Name of feature: **
+**Name of feature: Movie API**
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1h
 
-Start time: 
+Start time: 5:00p
 
 Finish time: 
 
