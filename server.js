@@ -12,6 +12,7 @@ let weatherData; //= require('./data/weather.json');
 
 app.get('/test', (req, res) => res.status(200).send('Server test successful.'));
 app.get('/weather', handleGetWeather);
+app.get('/movies', handleGetMovies);
 app.get('/*', (req, res) => res.status(500).send('500 ERROR: Path not found'));
 
 class Forecast {
@@ -20,6 +21,16 @@ class Forecast {
     this.date = dailyWeather.valid_date;
   }
 }
+// class Movie {
+//   constructor(movieData) {
+//     this.title = movieData.data;
+//     this.average_votes = movieData.data;
+//     this.total_votes = movieData.data;
+//     this.image_url = movieData.data;
+//     this.popularity = movieData.data;
+//     this.released_on = movieData.data;
+//   }
+// }
 
 async function handleGetWeather(req, res) {
   let lat = req.query.lat;
