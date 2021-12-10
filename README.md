@@ -27,7 +27,7 @@ To run this app on your local machine, you will need to obtain your own API keys
 12-08-2021 5:24pm - Server responds to weather query with assembled array of Forecast instances
 12-08-2021 6:20pm - Server sends error messages to client
 12-09-2021 8:50 am - Adds weatherbit API key to .env
-12-08-2021 :pm - 
+12-08-2021 4:39pm - Refactors to fetch & serve weather data from API
 
 
 ## Credit and Collaborations
@@ -64,15 +64,15 @@ Finish time: 10:30p
 
 Actual time needed to complete: 5h
 
-**Name of feature: **
+**Name of feature: Live Weather**
 
 Estimate of time needed to complete: 
 
-Start time: 
+Start time: 2:45p
 
-Finish time: 
+Finish time: 4:30p
 
-Actual time needed to complete: 
+Actual time needed to complete: 2h
 
 **Name of feature: **
 
