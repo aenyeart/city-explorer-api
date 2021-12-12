@@ -6,7 +6,7 @@ const cors = require('cors');
 const axios = require('axios');
 const app = express();
 app.use(cors());
-const PORT = 3001;
+const PORT = process.env.PORT;
 const handleGetWeather = require('./route-handlers/weather.js');
 
 app.get('/test', (req, res) => res.status(200).send('Server test successful.'));
