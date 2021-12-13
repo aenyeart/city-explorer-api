@@ -7,7 +7,6 @@ const axios = require('axios');
 const app = express();
 app.use(cors());
 
-
 const handleGetWeather = require('./route-handlers/weather.js');
 const handleGetMovies = require('./route-handlers/movies.js');
 
