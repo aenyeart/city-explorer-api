@@ -4,16 +4,23 @@
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-City Explorer API is a server and API, built in tandem with City Explorer
+City Explorer API is a server and API hosted on Heroku [here](https://ae-cityexplorerserver.herokuapp.com) and built in tandem with [City Explorer App](https://github.com/aenyeart/city-explorer) ([deployed on Netlify](https://aenyeart-city-explorer.netlify.app/)) 
 
 ## Getting Started
-To run this app on your local machine, you will need to obtain your own API keys for the APIs below, and add them to the .sample.env file in the root folder, changing the name from ".sample.env" to ".env"
-- [Location IQ](https://locationiq.com/register)
+To run this app on your local machine, you will need to obtain your own API keys for the APIs below, and add them to the .sample.env file in the root folder, then change the filename from ".sample.env" to ".env". (Be sure to add ".env" to your .gitignore file.)
+- [Weatherbit API](https://www.weatherbit.io/account/create)
+- [The Movie Database API](https://www.themoviedb.org/documentation/api)
 
 
 ## Architecture
-### Data Flow Diagram
-<!-- ![Data Flow Diagram](./public/img/data-flow.jpg?raw=true "Data Flow Diagram") -->
+### Data Flow Diagrams
+![Location API Data Flow](./img/cityexp-6-location.jpg?raw=true "Location API Data Flow")
+![Express Server Data Flow](./img/cityexp-7-server.jpg?raw=true "Express Server Data Flow")
+![Weather & Movies APIs Data Flow](./img/cityexp-8-api.jpg?raw=true "Weather & Movies APIs Data Flow")
+![Server Modules Data Flow](./img/cityexp-9-modules.jpg?raw=true "Server Modules Data Flow")
+![Cache Data Flow](./img/cityexp-10-cache.jpg?raw=true "Cache Data Flow")
+
+
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
@@ -29,6 +36,7 @@ To run this app on your local machine, you will need to obtain your own API keys
 12-09-2021 8:50 am - Adds weatherbit API key to .env
 12-09-2021 4:39pm - Refactors to fetch & serve weather data from API
 12-09-2021 7:20pm - Fetches movie data from API and serves to client
+12-12-2021 7:00pm - Server deployed on Heroku, application on Netlify
 
 
 
@@ -92,6 +100,6 @@ Estimate of time needed to complete: 30m
 
 Start time: 8:15a
 
-Finish time: 
+Finish time: ?
 
-Actual time needed to complete: 
+Actual time needed to complete: Unknown
